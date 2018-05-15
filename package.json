@@ -1,35 +1,28 @@
 {
-  "version": "1.4.0",
-  "author": "Amos Tan",
-  "private": true,
-  "dependencies": {},
-  "keywords": [
-    "pebble-app"
-  ],
-  "pebble": {
-    "sdkVersion": "3",
-    "resources": {
-      "media": []
-    },
-    "projectType": "native",
-    "uuid": "",
-    "messageKeys": {
-      "dummy": 0
-    },
-    "enableMultiJS": false,
-    "displayName": "Minimal",
-    "watchapp": {
-      "onlyShownOnCommunication": false,
-      "hiddenApp": false,
-      "watchface": true
-    },
-    "targetPlatforms": [
-      "aplite",
-      "basalt",
-      "chalk",
-      "diorite"
+    "author": "Amos Tan",
+    "dependencies": {},
+    "keywords": [
+        "pebble-app"
     ],
-    "capabilities": []
-  },
-  "name": "Minimal"
+    "name": "minimal",
+    "pebble": {
+        "displayName": "Minimal",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "dummy": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "1832cba8-e836-4c56-b940-77c3472ed50e",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.4.0"
 }

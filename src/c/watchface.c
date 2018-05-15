@@ -26,11 +26,11 @@ void main_window_load(Window *window){
 
   //Create TextLayer for Date
   s_date_layer = text_layer_create(
-    GRect(0, PBL_IF_ROUND_ELSE(41, 35), bounds.size.w, 30));
+    GRect(0, PBL_IF_ROUND_ELSE(41, 30), bounds.size.w, 35));
   text_layer_set_background_color(s_date_layer, GColorClear);
   text_layer_set_text_color(s_date_layer, GColorBlack);
   text_layer_set_text(s_date_layer, "Mon, 01 Jan");
-  text_layer_set_font(s_date_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
+  text_layer_set_font(s_date_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28));
   text_layer_set_text_alignment(s_date_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(s_date_layer));
 
@@ -83,7 +83,7 @@ void update_battery(Layer *layer, GContext *ctx){
     battery_remain = (int) s_battery_level  / 20;
 
   //Draw the circles;
-  int x = PBL_IF_ROUND_ELSE(57.5, 39.5), y = 4.5;
+  int x = PBL_IF_ROUND_ELSE(57, 39), y = 4;
   graphics_context_set_fill_color(ctx, GColorBlack);
 
   for (int i = 0; i < 5; ++i)

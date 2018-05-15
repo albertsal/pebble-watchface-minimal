@@ -1,11 +1,12 @@
 #include <pebble.h>
-#include <watchface.h>
+#include "watchface.h"
 
 static void init();
 static void deinit();
 int main(void);
 
 int main(void) {
+  setlocale(LC_ALL, "it_IT");
   init();
   app_event_loop();
   deinit();
